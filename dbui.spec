@@ -75,7 +75,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 
 %files mysql
+%defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/dbui.mysql
 
 # %files postgresql
+# %defattr(644,root,root,755)
 # %attr(755,root,root) %{_bindir}/dbui.postgresql
