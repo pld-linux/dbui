@@ -26,7 +26,7 @@ mysql/postgresql.
 
 %package mysql
 Summary:	dbui linked with mysql
-Summary(pl):	dbui zlinkowany z mysql
+Summary(pl):	dbui skonsolidowane z mysql
 Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
 
@@ -34,11 +34,11 @@ Group:		Applications/Databases/Interfaces
 dbui linked with mysql.
 
 %description mysql -l pl
-dbui zlinkowany z mysql.
+dbui skonsolidowane z mysql.
 
 %package postgresql
 Summary:	dbui linked with postgresql
-Summary(pl):	dbui zlinkowany z postgresql
+Summary(pl):	dbui skonsolidowane z postgresql
 Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
 
@@ -46,7 +46,7 @@ Group:		Applications/Databases/Interfaces
 dbui linked with postgresql.
 
 %description postgresql -l pl
-dbui zlinkowany z postgresql.
+dbui skonsolidowane z postgresql.
 
 %prep
 %setup  -q
