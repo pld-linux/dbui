@@ -13,7 +13,6 @@ BuildRequires:	mysql-devel
 # BuildRequires:	postgresql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 It's a gtk interface to mysql/postgresql databases. You might say a
 database editor. It's still in its very early stages but you can fully
@@ -63,7 +62,7 @@ mv -f dbui dbui.mysql
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_bindir}
+install -d $RPM_BUILD_ROOT%{_bindir}
 
 install dbui.mysql $RPM_BUILD_ROOT%{_bindir}
 # install dbui.postgresql $RPM_BUILD_ROOT%{_bindir}
