@@ -1,5 +1,5 @@
-Summary:	It's a gtk interface to mysql/postgresql databases
-Summary(pl):	Interfejs gtk do baz danych mysql/postgresql
+Summary:	It's a GTK+ interface to mysql/postgresql databases
+Summary(pl):	Interfejs GTK+ do baz danych mysql/postgresql
 Name:		dbui
 Version:	0.4.0
 Release:	1
@@ -14,12 +14,12 @@ BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-It's a gtk interface to mysql/postgresql databases. You might say a
+It's a GTK+ interface to mysql/postgresql databases. You might say a
 database editor. It's still in its very early stages but you can fully
 search, update, add, and delete any mysql/postgresql database.
 
 %description -l pl
-To jest interfejs gtk do baz danych mysql/postgresql. Mo¿na go nazwaæ
+To jest interfejs GTK+ do baz danych mysql/postgresql. Mo¿na go nazwaæ
 edytorem baz danych. Nadal jest we wstêpnym stadium rozwoju, ale mo¿na
 ju¿ przeszukiwaæ, uaktualniaæ, dodawaæ i usuwaæ z baz
 mysql/postgresql.
