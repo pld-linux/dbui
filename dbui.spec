@@ -1,4 +1,5 @@
 Summary:	It's a gtk interface to mysql/postgresql databases
+Summary(pl):	Interfejs gtk do baz danych mysql/postgresql
 Name:		dbui
 Version:	0.4.0
 Release:	1
@@ -9,51 +10,64 @@ URL:		http://spyder.virtualbeer.net/dbui/
 BuildRequires:	gtk+-devel
 BuildRequires:	mysql-devel
 # BuildRequires:	postgresql-devel
-Requires:	gtk+
-Requires:	mysql-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _prefix /usr/X11R6
 %define         _mandir %{_prefix}/man
 
 %description
-Its a gtk interface to mysql databases. You might say a database editor. Its
-still in its very early stages but you can fully search,update, add, and delete
-any mysql databas. 
+It's a gtk interface to mysql/postgresql databases. You might say a
+database editor. It's still in its very early stages but you can fully
+search, update, add, and delete any mysql/postgresql database.
+
+%description -l pl
+To jest interfejs gtk do baz danych mysql/postgresql. Mo¿na go nazwaæ
+edytorem baz danych. Nadal jest we wstêpnym stadium rozwoju, ale mo¿na
+ju¿ przeszukiwaæ, uaktualniaæ, dodawaæ i usuwaæ z baz
+mysql/postgresql.
 
 %package mysql
-Summary:	dbui linked with mysql 
-Requires: dbui = %{version}
+Summary:	dbui linked with mysql
+Summary(pl):	dbui zlinkowany z mysql
+Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
 
 %description mysql
-dbui linked with mysql 
+dbui linked with mysql.
+
+%description mysql -l pl
+dbui zlinkowany z mysql.
 
 %package postgresql
-Summary:	dbui linked with postgresql 
-Requires: dbui = %{version}
+Summary:	dbui linked with postgresql
+Summary(pl):	dbui zlinkowany z postgresql
+Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
 
 %description postgresql
 dbui linked with postgresql.
-due to incompatibility with latest postgres libraries it doesn't compile
-correctly
+
+%description postgresql -l pl
+dbui zlinkowany z postgresql.
 
 %prep
 %setup  -q
 
 %build
 %{__make} -f Makefile.mysql
-mv dbui dbui.mysql
+mv -f dbui dbui.mysql
+
+#due to incompatibility with latest postgres libraries it doesn't compile
+#correctly
 # %{__make} -f Makefile.postgres
-# mv dbui dbui.postgresql
+# mv -f dbui dbui.postgresql
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_bindir}
 
-cp dbui.mysql $RPM_BUILD_ROOT/%{_bindir}
-# cp dbui.postgresql $RPM_BUILD_ROOT/bin
+install dbui.mysql $RPM_BUILD_ROOT%{_bindir}
+# install dbui.postgresql $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf README
 
@@ -67,5 +81,5 @@ rm -rf $RPM_BUILD_ROOT
 %files mysql
 %attr(755,root,root) %{_bindir}/dbui.mysql
 
-%files postgresql
+# %files postgresql
 # %attr(755,root,root) %{_bindir}/dbui.postgresql
