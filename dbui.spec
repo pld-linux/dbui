@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Databases/Interfaces
 Source0:	http://spyder.virtualbeer.net/dbui/%{name}-%{version}.tar.gz
+# Source0-md5:	962828bfc9bdb64697111624090bcfef
 URL:		http://spyder.virtualbeer.net/dbui/
 BuildRequires:	gtk+-devel
 BuildRequires:	mysql-devel
