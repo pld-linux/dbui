@@ -12,8 +12,6 @@ BuildRequires:	mysql-devel
 # BuildRequires:	postgresql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix /usr/X11R6
-%define         _mandir %{_prefix}/man
 
 %description
 It's a gtk interface to mysql/postgresql databases. You might say a
