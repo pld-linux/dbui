@@ -1,5 +1,5 @@
-Summary:	It's a GTK+ interface to MySQL/postgresql databases
-Summary(pl):	Interfejs GTK+ do baz danych MySQL/postgresql
+Summary:	It's a GTK+ interface to MySQL/PostgreSQL databases
+Summary(pl):	Interfejs GTK+ do baz danych MySQL/PostgreSQL
 Name:		dbui
 Version:	0.4.0
 Release:	1
@@ -14,15 +14,15 @@ BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-It's a GTK+ interface to MySQL/postgresql databases. You might say a
+It's a GTK+ interface to MySQL/PostgreSQL databases. You might say a
 database editor. It's still in its very early stages but you can fully
-search, update, add, and delete any MySQL/postgresql database.
+search, update, add, and delete any MySQL/PostgreSQL database.
 
 %description -l pl
-To jest interfejs GTK+ do baz danych MySQL/postgresql. Mo¿na go nazwaæ
+To jest interfejs GTK+ do baz danych MySQL/PostgreSQL. Mo¿na go nazwaæ
 edytorem baz danych. Nadal jest we wstêpnym stadium rozwoju, ale mo¿na
 ju¿ przeszukiwaæ, uaktualniaæ, dodawaæ i usuwaæ z baz
-MySQL/postgresql.
+MySQL/PostgreSQL.
 
 %package mysql
 Summary:	dbui linked with MySQL
@@ -37,16 +37,16 @@ dbui linked with MySQL.
 dbui skonsolidowane z MySQL.
 
 %package postgresql
-Summary:	dbui linked with postgresql
-Summary(pl):	dbui skonsolidowane z postgresql
+Summary:	dbui linked with PostgreSQL
+Summary(pl):	dbui skonsolidowane z PostgreSQL
 Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
 
 %description postgresql
-dbui linked with postgresql.
+dbui linked with PostgreSQL.
 
 %description postgresql -l pl
-dbui skonsolidowane z postgresql.
+dbui skonsolidowane z PostgreSQL.
 
 %prep
 %setup  -q
