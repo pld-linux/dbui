@@ -2,7 +2,7 @@ Summary:	It's a GTK+ interface to MySQL/PostgreSQL databases
 Summary(pl):	Interfejs GTK+ do baz danych MySQL/PostgreSQL
 Name:		dbui
 Version:	0.4.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Databases/Interfaces
 Source0:	http://spyder.virtualbeer.net/dbui/%{name}-%{version}.tar.gz
