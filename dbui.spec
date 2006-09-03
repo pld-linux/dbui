@@ -8,9 +8,9 @@ Group:		Applications/Databases/Interfaces
 Source0:	http://spyder.virtualbeer.net/dbui/%{name}-%{version}.tar.gz
 # Source0-md5:	962828bfc9bdb64697111624090bcfef
 URL:		http://spyder.virtualbeer.net/dbui/
+# BuildRequires:	postgresql-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	mysql-devel
-# BuildRequires:	postgresql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,8 +27,8 @@ MySQL/PostgreSQL.
 %package mysql
 Summary:	dbui linked with MySQL
 Summary(pl):	dbui skonsolidowane z MySQL
-Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
+Requires:	%{name} = %{version}-%{release}
 
 %description mysql
 dbui linked with MySQL.
@@ -39,8 +39,8 @@ dbui skonsolidowane z MySQL.
 %package postgresql
 Summary:	dbui linked with PostgreSQL
 Summary(pl):	dbui skonsolidowane z PostgreSQL
-Requires:	%{name} = %{version}
 Group:		Applications/Databases/Interfaces
+Requires:	%{name} = %{version}-%{release}
 
 %description postgresql
 dbui linked with PostgreSQL.
