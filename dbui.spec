@@ -1,5 +1,5 @@
 Summary:	It's a GTK+ interface to MySQL/PostgreSQL databases
-Summary(pl.UTF-8):   Interfejs GTK+ do baz danych MySQL/PostgreSQL
+Summary(pl.UTF-8):	Interfejs GTK+ do baz danych MySQL/PostgreSQL
 Name:		dbui
 Version:	0.4.0
 Release:	4
@@ -26,7 +26,7 @@ MySQL/PostgreSQL.
 
 %package mysql
 Summary:	dbui linked with MySQL
-Summary(pl.UTF-8):   dbui skonsolidowane z MySQL
+Summary(pl.UTF-8):	dbui skonsolidowane z MySQL
 Group:		Applications/Databases/Interfaces
 Requires:	%{name} = %{version}-%{release}
 
@@ -38,7 +38,7 @@ dbui skonsolidowane z MySQL.
 
 %package postgresql
 Summary:	dbui linked with PostgreSQL
-Summary(pl.UTF-8):   dbui skonsolidowane z PostgreSQL
+Summary(pl.UTF-8):	dbui skonsolidowane z PostgreSQL
 Group:		Applications/Databases/Interfaces
 Requires:	%{name} = %{version}-%{release}
 
